@@ -71,3 +71,38 @@ a:hover li{
     padding: 10px 15px;
     margin: 5px 10px;
 }
+
+/* TITULO DOS, IMAGENES DE MEMES */
+
+h2{
+    padding: 10px 15px; 
+    font-size: 27px;
+    color: #000;
+    text-align: center;
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+}
+
+.uno, .dos, .tres, .cuatro, 
+.cinco, .seis{
+    background-color: rgb(123, 224, 103);
+    height: 200px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer{
+    background-color: #784f97;
+    color: #fff;
+    grid-column: span 3;
+}
