@@ -31,7 +31,7 @@ header{
 
 h1 {
     padding: 10px 15px; 
-    font-size: 35px;
+    font-size: 50px;
     color: #000;
 }
 
@@ -50,7 +50,7 @@ ul{
     list-style: none;
     display: flex;
     justify-content: end;
-    font-size: 25px;
+    font-size: 30px;
     margin: 0px 10px;
 }
 
@@ -70,6 +70,10 @@ a:hover li{
 .buscar{
     padding: 10px 15px;
     margin: 5px 10px;
+}
+
+.banner{
+    width: 100%;
 }
 
 /* TITULO DOS, IMAGENES DE MEMES */
