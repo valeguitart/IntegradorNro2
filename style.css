@@ -105,6 +105,14 @@ h2{
     justify-content: center;
 }
 
+.memeuno, .memedos, .memetres,
+.memecuatro, .memecinco, .memeseis {
+    padding: 0 35px;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+}
+
 footer{
     background-color: #784f97;
     color: #fff;
