@@ -76,7 +76,7 @@ a:hover li{
     width: 100%;
 }
 
-/* TITULO DOS, IMAGENES DE MEMES */
+/* TITULO DOS, IMAGENES DE MEMES y TITULOS DE IMAGENES */
 
 h2{
     padding: 10px 15px; 
@@ -86,7 +86,7 @@ h2{
 }
 
 .contenedor{
-    width: 90%;
+    width: 100%;
     max-width: 1000px;
     margin: 20px auto;
     display: grid;
@@ -95,25 +95,97 @@ h2{
     grid-template-rows: repeat(2, auto);
 }
 
+h3{
+    font-size: 25px;
+    padding-top: 55px;
+    color: #000;
+}
+
 .uno, .dos, .tres, .cuatro, 
 .cinco, .seis{
-    background-color: rgb(123, 224, 103);
-    height: 200px;
+    background-color: #c2c8c574;
+    height: 300px;
     text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding-top: 70px;
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+
+.uno:hover{
+    background-color: rgba(255, 0, 0, 0.800);
+}
+
+.dos:hover{
+    background-color: rgba(255, 68, 0, 0.800);
+}
+
+.tres:hover{
+    background-color: rgba(255, 255, 0, 0.800);
+}
+
+.cuatro:hover{
+    background-color: rgba(0, 128, 0, 0.800);
+}
+
+.cinco:hover{
+    background-color: rgba(0, 0, 255, 0.800);
+}
+
+.seis:hover{
+    background-color: rgba(202, 0, 202, 0.800);
 }
 
 .memeuno, .memedos, .memetres,
-.memecuatro, .memecinco, .memeseis {
+.memecuatro, .memecinco, .memeseis{
     padding: 0 35px;
     height: 150px;
     background-size: cover;
     background-position: center;
+    text-align: center;
 }
 
+/* FOOTER */
+
 footer{
-    background-color: #784f97;
-    color: #fff;
+    /* background-color: #784f97; */
+    /* color: #000; */
+    width: 100%;
+    padding: 0;
+}
+
+.footer-contenedor{
+    width: 100%;
+}
+
+.redes a{
+    color: #000;
+}
+
+.redes{
+    width: 100%;
+    margin: auto;
+    /* display: flex;
+    flex-direction: column;*/
+    font-size: 50px; 
+    display: inline-block;
+    height: 45px;
+    line-height: 45px;
+    margin-right: 10px;
+    text-align: center;
+    border-radius: 20%;
+
+}
+
+.redes a:hover{
+    background: linear-gradient(to right, orange, #ec38bc, #7303c0, cyan);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+
+.grupodos{
+    padding: 7px;
+    text-align: center;
+    font-style: italic;
 }
