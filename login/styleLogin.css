@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-image: url(./src/wallpaperfondo.jpg);
+    background-size: cover;
+    min-height: 100vh;
+}
+
+/* FORM */
+
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+    color: black;
+    font-size: 30px;
+    background: violet;
+}
+
+form{
+    margin: auto;
+    width: 50%;
+    max-width: 580px;
+    background: rgba(146, 143, 143, 0.568);
+    padding: 30px;
+    margin-top: 168px;
+}
+
+label{
+    margin: 0;
+    padding: 0;
+    font-size: 28px;
+}
+
+input{
+    display: block;
+    padding: 10px;
+    width: 100%;
+    margin: 24px 0;
+    font-size: 20px;
+    border: 0;
+    border-radius: 20px;
+}
+
+input[type="submit"]{
+    background-color: aqua;
+    border: 0;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-bottom: 0;
+}
+
+input[type="submit"]:hover{
+    background-color: rgba(0, 255, 255, 0.534);
+}

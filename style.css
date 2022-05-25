@@ -112,6 +112,8 @@ h3{
     height: 300px;
     text-align: center;
     padding-top: 70px;
+    /*! opacity: 0; */
+    /*! transition: 0.5s; */
     /* display: flex; */
     /* align-items: center; */
     /* justify-content: center; */
@@ -260,10 +262,6 @@ h2{
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2);
 }
-
-/* FOOTER */
-
-
 
 } 
 
