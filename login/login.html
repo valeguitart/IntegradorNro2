@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,28 +9,71 @@
     <link rel="stylesheet" href="./styleLogin.css">
     <title>Login</title>
 </head>
+
 <body>
-    <h1> Iniciar Sesión </h1>
+    <!-- <header> -->
+    <!-- <input type="checkbox" id="btn-menu">
+        <label for="btn-menu">
+            <i class="fas fa-bars"></i>
+        </label> -->
+    <!-- <a href="./index.html">
+            <h1 class="Logo"> M O M A Z O S</h1>
+        </a>
+    </header> -->
+    <nav class="main-nav">
+        <ul id="main-menu">
+            <a href="./index.html">
+                <li>Inicio</li>
+            </a>
+            <!-- <a href="#">
+                <li>Memes</li>
+            </a>
+            <a href="./login/login.html">
+                <li>Login</li>
+            </a> -->
+        </ul>
+    </nav>
 
-    <form action="#">
-        <label for="nombre"> Nombre: </label>
-        <input type="text" name="text" id="text">
+    <div class="contenedor">
+        <div class="inicarSesion">
+            <h2>Iniciar Sesión</h2>
+        </div>
+        <form id="formulario" action="#" method="#">
 
-        <label for="apellido"> Apellido: </label>
-        <input type="text" name="text" id="text">
+            <div class="form-control">
+                <label for="nombre"> Nombre de Usuario </label>
+                <input type="text" id="usuario">
+                <p></p>
+            </div>
 
-        <label for="email"> Email: </label>
-        <input type="email" name="email" id="email">
+            <div class="form-control">
+                <label for="email"> E-mail </label>
+                <input type="email" id="email">
+                <p></p>
+            </div>
 
-        <label for="contraseña"> Contraseña </label>
-        <input type="password" name="contraseña" id="contraseña">
-    
-        <p>¿Olvidaste tu contraseña?</p>
+            <div class="form-control">
+                <label for="contraseña"> Contraseña </label>
+                <input type="password" id="contraseña">
+                <p></p>
+            </div>
 
-        <input type="submit" value="Iniciar Sesión">
-    </form>
+            <div class="form-control">
+                <label for="contraseña"> Confirmar Contraseña </label>
+                <input type="password" id="confirmarContraseña">
+                <p></p>
+            </div>
+
+            <!-- <p>¿Olvidaste tu contraseña?</p> -->
+
+            <button type="submit"> Iniciar Sesión </button>
+        </form>
+
+    </div>
 
 
 
+    <script src="./app.js"></script>
 </body>
+
 </html>
