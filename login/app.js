@@ -18,7 +18,6 @@ window.addEventListener('load', () => {
 
         // Validando campo de Usuario
         if (usuarioValor === '') {
-            console.log("Campo Vacio");
             validaFalla(usuario, 'Campo Vacio')
         } else {
             validaOk(usuario)
@@ -27,27 +26,33 @@ window.addEventListener('load', () => {
         // Validando campo de email
 
         if (emailValor === '') {
-            console.log("Campo Vacio");
             validaFalla(email, 'Campo Vacio')
+        } else if(!validaEmail(emailValor)){
+            validaFalla(email, 'El e-mail no es válido')
         } else {
             validaOk(email)
         }
 
         // Validando contraseña
+        const er = /^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$/
         if (contraseñaValor === '') {
-            console.log("Campo Vacio");
-            validaFalla(contraseña, 'Campo Vacio')
+            validaFalla(contraseña, 'Campo Vacio');
+        } else if(contraseñaValor.length < 8){
+            validaFalla(contraseña, 'Debe tener 8 caracteres cómo mínimo');
+        } else if (!contraseñaValor.match(er)){
+            validaFalla(contraseña, 'Debe tener al menos una may., una min. y un núm.');
         } else {
-            validaOk(contraseña)
+            validaOk(contraseña);
         }
 
         // Validando Confirmar Contraseña
         if (confirmarContraseñaValor === '') {
-            console.log("Campo Vacio");
-            validaFalla(confirmarContraseña, 'Campo Vacio')
-        } else {
+            validaFalla(confirmarContraseña, 'Confirme su contraseña')
+        } else if(contraseñaValor !== confirmarContraseñaValor){
+            validaFalla(confirmarContraseña, 'La contraseña no coincide')
+        } else{
             validaOk(confirmarContraseña)
-        }
+        } 
 
     }
 
@@ -62,5 +67,12 @@ window.addEventListener('load', () => {
         const formControl = input.parentElement
         formControl.className = 'form-control ok'
     }
+
+    const validaEmail = (email) => {
+        return /^(([^<>()\[\]\\.,;:\s@”]+(\.[^<>()\[\]\\.,;:\s@”]+)*)|(“.+”))@((\[[0–9]{1,3}\.[0–9]{1,3}\.[0–9]{1,3}\.[0–9]{1,3}])|(([a-zA-Z\-0–9]+\.)+[a-zA-Z]{2,}))$/.test(email);
+
+    }
+
+    
 
 })

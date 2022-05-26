@@ -8,7 +8,7 @@ body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-image: url(./src/wallpaperfondo.jpg);
     background-size: cover;
-    min-height: 100vh;
+    min-height: 90vh;
 }
 
 /* NAV */
@@ -40,13 +40,10 @@ a:hover li{
 
 /* FORM */
 
-/* h1{
-    text-align: center;
-    margin-bottom: 20px;
-    color: black;
-    font-size: 30px;
-    background: violet;
-} */
+h2{
+    display: flex;
+    justify-content: center;
+}
 
 form{ 
     margin: auto;
@@ -57,6 +54,7 @@ form{
     margin-top: 50px;
     text-align: center;
     border-radius: 24px;
+    box-shadow: 19px 20px 8px -9px rgba(0, 0, 0, 0.2);
  } 
 
 label{
