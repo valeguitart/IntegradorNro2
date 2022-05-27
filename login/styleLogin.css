@@ -41,8 +41,16 @@ a:hover li{
 /* FORM */
 
 h2{
-    display: flex;
-    justify-content: center;
+    color: #fff;
+    margin: auto;
+    width: 50%;
+    max-width: 400px;
+    background: rgba(0, 0, 0, 0.582);
+    padding: 20px;
+    text-align: center;
+    border-radius: 24px;
+    box-shadow: 19px 20px 8px -9px rgba(0, 0, 0, 0.2);
+
 }
 
 form{ 
@@ -51,7 +59,7 @@ form{
     max-width: 400px;
     background: rgba(0, 0, 0, 0.582);
     padding: 20px;
-    margin-top: 50px;
+    margin-top: 20px;
     text-align: center;
     border-radius: 24px;
     box-shadow: 19px 20px 8px -9px rgba(0, 0, 0, 0.2);
@@ -60,34 +68,78 @@ form{
 label{
     margin: 0;
     padding: 0;
-    font-size: 28px;
+    font-size: 17px;
     color: #ffff
 }
 
 input{
-    display: flex;
+    /* display: flex; */
     padding: 5px;
     width: 100%;
     margin: 17px 0;
     font-size: 15px;
-    border: 0;
+    border: none;
     border-radius: 20px;
 }
 
-/* input[type="submit"]{
-    background-color: rgb(114, 124, 124);
-    border: 0;
+input:focus{
+    outline: none;
+}
+
+button{
+    background: #ec38bc;
+    border: 1px solid #000;
     border-radius: 20px;
+    color: #fff;
+    width: 100%;
+    padding: 5px;
+    font-size: 15px;
+    margin-top: 25px;
     cursor: pointer;
-    margin-bottom: 0;
 }
-
-input[type="submit"]:hover{
-    background-color: rgba(65, 83, 83, 0.534);
-} */
-
 
 /* FORM JS */
 .form-control.falla input{
     border: 0.2px solid #ff1100;
 }
+
+.form-control.ok input{
+    border: 0.2px solid #08ff3d;
+}
+
+.form-control p{
+    visibility: hidden;
+    position: absolute;
+    font-size: small;
+    font-weight: 500;
+    text-align: right;
+    margin-bottom: 30px;
+}
+
+.form-control.falla p{
+    visibility: visible;
+    color: #ff1100;
+}
+
+
+/* FOOTER */
+
+footer{
+    /* background-color: #784f97; */
+    /* color: #000; */
+    width: 100%;
+    padding: 0;
+}
+
+.footer-contenedor{
+    width: 100%;
+}
+
+.grupodos{
+    padding: 5px;
+    text-align: center;
+    font-style: italic;
+    margin-top: 25px;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #fff;
+} 
