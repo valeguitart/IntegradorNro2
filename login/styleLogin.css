@@ -143,3 +143,12 @@ footer{
     background-color: rgba(0, 0, 0, 0.2);
     color: #fff;
 } 
+
+
+/* RESPONSIVE */
+
+@media(max-width: 991px){
+    body{
+        background-size: cover;
+    }
+}

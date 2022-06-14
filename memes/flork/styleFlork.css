@@ -356,6 +356,10 @@ footer{
         height: 100px;
     }
 
+    article{
+        height: 450px;
+    }
+
 
     p{
         font-size: 17px;
