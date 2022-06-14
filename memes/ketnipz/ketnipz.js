@@ -1,24 +1,24 @@
 const productos = [
     {
         id: 1,
-        nombre: "Flork Uno",
+        nombre: "Ketnipz Uno",
         descripcion: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, minus!",
-        precio: "$13.50",
-        img: './Flork Png/Flork-1.png'
+        precio: "$19.50",
+        img: './ketnipzpng/ketnip1.png'
     },
     {
         id: 2,
-        nombre: "Flork Dos",
+        nombre: "Ketnipz Dos",
         descripcion: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, minus!",
-        precio: "$13.50",
-        img: "./Flork Png/Flork-2.png"
+        precio: "$12.50",
+        img: "./ketnipzpng/ketnip2.png"
     },
     {
         id: 3,
-        nombre: "Flork Tres",
+        nombre: "Ketnipz Tres",
         descripcion: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, minus!",
-        precio: "$13.50",
-        img: "./Flork Png/Flork-3.png"
+        precio: "$10.50",
+        img: "./ketnipzpng/ketnip3.png"
     }
 ]
 
