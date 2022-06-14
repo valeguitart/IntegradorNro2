@@ -289,7 +289,7 @@ footer{
     header{
         padding: 20px;
         background: none;
-        position: absolute;
+        position: sticky;
     }
 
     header label{
@@ -331,7 +331,7 @@ footer{
 
     .banner{
         max-width: 100%;
-        margin-top: 106px;
+        margin-top: 0px;
     }
     /* h2 y grid */
 
@@ -366,10 +366,6 @@ footer{
         font-size: 15px;
         color: #000;
         margin-top: 15px;
-    }
-
-    button{
-        margin-top: 25px;
     }
 
     .redes{
