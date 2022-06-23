@@ -188,6 +188,10 @@ h3{
     
 }
 
+.filtro{
+    display: none;
+}
+
 /* FOOTER */
 
 footer{
